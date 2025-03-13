@@ -33,13 +33,13 @@ const App = () => {
         {formula || '0'}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '10px' }}>
-        {['C', '+', '-', '/'].map(val => <Filho key={val} valor={val} cor="#CCC" callback={Recebe} />)}
+        {['C', '+', '-', '/'].map(val => <Filho key={val} valor={val} cor="#FFA500" callback={Recebe} />)}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '10px' }}>
-        {['7', '8', '9', '*'].map(val => <Filho key={val} valor={val} cor="#DDD" callback={Recebe} />)}
+        {['7', '8', '9', '*'].map(val => <Filho key={val} valor={val} cor={val === '*' ? '#FFA500' : '#DDD'} callback={Recebe} />)}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '10px' }}>
-        {['4', '5', '6', '='].map(val => <Filho key={val} valor={val} cor="#DDD" callback={Recebe} />)}
+        {['4', '5', '6', '='].map(val => <Filho key={val} valor={val} cor={val === '=' ? '#FFA500' : '#DDD'} callback={Recebe} />)}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '10px' }}>
         {['1', '2', '3', '0'].map(val => <Filho key={val} valor={val} cor="#DDD" callback={Recebe} />)}
