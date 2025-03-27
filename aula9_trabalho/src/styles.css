@@ -1,0 +1,27 @@
+/* styles.css - Tema Escuro */
+body {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  border: 1px solid #333 !important;
+}
+
+.card img {
+  border-bottom: 1px solid #333 !important;
+}
+
+.card-content {
+  background-color: #252525 !important;
+  color: #ffffff !important;
+}
+
+.avatar {
+  border: 2px solid #ffffff !important;
+}
